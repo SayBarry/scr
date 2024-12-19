@@ -5,8 +5,8 @@ from telebot.types import Message
 import requests
 import colorama
 
-Token = "7393252205:AAG55M3Zv9cOnTVoHS3a3FDlMOzxVVAqPf4" #AQUI PONES EL TOKEN DE TU BOT !
-id_channel = -1002046472570 #AQUI PONES EL ID DEL CANAL DEL SCRAPPER DONDE SE VAN A MANDAR LAS TARGETAS !
+Token = "7393252205:AAG55M3Zv9cOnTVoHS3a3FDlMOzxVVAqPf4" #HERE YOU PUT THE TOKEN OF YOUR BOT!
+id_channel = -1002046472570 #HERE YOU PUT THE ID OF THE SCRAPPER CHANNEL WHERE THE CARDS WILL BE SENT!
 bot = telebot.TeleBot(Token, parse_mode="html")
 
 def bins(bin):
@@ -36,7 +36,7 @@ def bins(bin):
 def start(m: Message):
     stderr.write(f'\033[41m\033[30m & \033[0m Bot as start -> @{m.from_user.username}\n')
     stderr.flush()
-    bot.reply_to(m, "<b>Este Bot es solo de uso exclusivo para el scrapper</b>")
+    bot.reply_to(m, "<b>This Bot is for exclusive use only for the scrapper</b>")
 
 # comando bin
 
